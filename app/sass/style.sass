@@ -21,8 +21,68 @@
 		color: #fff
 		background: #1e1f20
 		border-color: #1e1f20
+.button--black:hover a
+	background: rgba($black, 0.9)
 h4 
 	font-size: 16px
+label 
+	display: block 
+	font-size: 13px 
+	margin-bottom: 5px
+.form-prompt
+	font-size: 12px
+input,
+select
+	display: block 
+	width: 100%
+	height: 40px  
+	padding: 8px
+	border: 1px solid rgba($black, 0.5)
+select:focus
+input:focus
+	box-shadow: 0 0 4px $black
+	outline: none
+
+.checkbox-wrapper
+	display: flex
+	label 
+		margin-bottom: 0
+		font-size: 14px
+		cursor: pointer
+input[type="checkbox"]
+	display: none
+.form-col
+	width: 50%
+.checkbox-input + label
+	height: 20px
+	width: 20px
+	background: #fff
+	cursor: pointer
+	border: 1px solid rgba($black, 0.5)
+	margin-right: 10px
+.checkbox-input:checked + label
+	background: url('../images/close.svg')	
+	background-size: 90%
+	background-position: center
+	border: none
+	background-repeat: no-repeat
+	border: 1px solid rgba($black, 1)
+.form__row
+	margin-bottom: 16px
+.checkbox-wrapper
+	margin-bottom: 15px
+.form-text
+	margin-bottom: 20px
+.form-col 
+	.checkbox-wrapper
+		margin-bottom: 15px
+.form-text
+	a 
+		text-decoration: underline
+.prompt
+	font-size: 12px
+.checkbox-wrapper-password
+	margin-bottom: 0
 //----global style------
 
 // ---start menu style---
@@ -102,6 +162,61 @@ h4
 	text-decoration: underline
 //-----end wishlist style------
 
+//-----start section header style---
+.section__header
+	text-align: center 
+	padding-bottom: 40px
+	h2 
+		margin-top: 20px
+//-----end section header style---
+
+//------start login section----
+.login
+	padding-bottom: 80px
+.login__tab-item
+	display: none 
+.login__tab-item:first-child 
+	display: block
+.login__tabs
+	display: flex 
+	justify-content: center
+	border-bottom: 1px solid $black
+	margin-bottom: 30px
+.login__content
+	width: 550px 
+	max-width: 100%
+	margin: 0 auto
+.login__tab
+	width: 50% 
+	display: flex 
+	justify-content: center 
+	align-items: center
+	cursor: pointer
+	padding: 5px 
+	text-transform: uppercase
+	color: #888888
+.login__tab.active 
+	color: $black 
+	border-bottom: 2px solid $black
+.fogot-password
+	font-size: 14px 
+	text-decoration: underline
+	cursor: pointer
+.form__row--footer
+	display: flex 
+	justify-content: space-between
+.fogot-password:hover 
+	text-decoration: none
+.form__row--btn-wrapper
+	margin-top: 20px
+	.button 
+		width: 100% 
+		a 
+			width: 100%
+//------end login section------
+
+.cd-dropdown
+	display: none
 @import "media"
 
 

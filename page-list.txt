@@ -2,7 +2,6 @@
 2. Checkout
 3. Login
 4. Sign up
-5. Wishlist
 6. Category
 7. Product description
 8. Contact page

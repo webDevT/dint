@@ -6,6 +6,13 @@ $('.wishlist__remove').click(function(){
 })
 // end wishlist
 
+// start login tab
+$(".login__tab").click(function() {
+  $(".login__tab").removeClass("active").eq($(this).index()).addClass("active");
+  $(".login__tab-item").hide().eq($(this).index()).fadeIn(800)
+}).eq(0).addClass("active");
+// end login tab
+
 });
 
 
