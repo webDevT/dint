@@ -81,8 +81,8 @@ gulp.task('export', function(){
 	.pipe(gulp.dest('docs/fonts'));
 
 
-	let BuildImg = gulp.src('app/img/**/*.*')
-	.pipe(gulp.dest('docs/img'));
+	let BuildImg = gulp.src('app/images/**/*.*')
+	.pipe(gulp.dest('docs/images'));
 });
 
 gulp.task('watch', function(){
