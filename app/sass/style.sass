@@ -1,8 +1,106 @@
 @import "vars"
 @import "fonts"
 
+//----global style------
+.button a
+	border: 1px solid #1e1f20
+	padding: 18.5px 34px
+	display: inline-block
+	font-size: 14px
+	color: #1e1f20
+	background :#fff
+	text-transform: uppercase
+	text-align: center
+.button
+	a:hover
+		color: #fff
+		background: #1e1f20
+		border-color: #1e1f20
+.button--black
+	a
+		color: #fff
+		background: #1e1f20
+		border-color: #1e1f20
+h4 
+	font-size: 16px
+//----global style------
 
+// ---start menu style---
+.menu-bar
+	.menu__container 
+		display: flex
+		justify-content: center
+// ---end menu style---
 
+//----start page style----
+.page-header
+	img 
+		width: 100%
+//----end page style------
+
+//-----start wishlist style----
+.wishlist-header
+	float: none
+	p 
+		max-width: 600px
+		margin: 0 auto
+		margin-bottom: 0px
+	.button 
+		margin-top: 20px
+.wishlist__items
+	padding-top: 10px
+	padding-bottom: 7vw
+.wishlist__item
+	padding-top: 10px 
+	padding-bottom: 10px 
+	border-top: 1px solid #1e1f20
+	display: flex 
+	justify-content: space-between
+	position: relative
+	cursor: pointer
+.wishlist__item:last-child 
+	border-bottom: 1px solid #1e1f20
+.wishlist__item-img
+	width: 200px
+	height: 200px
+	overflow: hidden
+	display: flex 
+	align-items: center
+	img 
+		min-width: 100%
+		min-height: 100%
+.wishlist__item-left
+	display: flex
+.wishlist__product-description,
+.wishlist__product-details-footer
+	font-size: 12px
+.wishlist__product-details-footer
+	display: flex 
+	justify-content: space-between
+.wishlist__product-details
+	flex-direction: column
+	display: flex
+	justify-content: space-between
+	padding: 20px 25px
+	max-width: 400px
+	h4 
+		text-decoration: underline
+.wishlist__item-right
+	width: 300px
+	padding: 20px 0px
+	min-height: 100%
+	display: flex
+	flex-direction: column 
+	justify-content: space-between
+	.button 
+		min-width: 100%
+.wishlist__remove
+	position: absolute
+	right: 0 
+	top: 3px
+	font-size: 16px
+	text-decoration: underline
+//-----end wishlist style------
 
 @import "media"
 
