@@ -77,8 +77,8 @@ gulp.task('export', function(){
 	let BuildJs = gulp.src('app/js/**/*.js')
 	.pipe(gulp.dest('docs/js'));
 
-	let BuildFonts = gulp.src('app/fonts/**/*.*')
-	.pipe(gulp.dest('docs/fonts'));
+	let BuildFonts = gulp.src('app/font/**/*.*')
+	.pipe(gulp.dest('docs/font'));
 
 
 	let BuildImg = gulp.src('app/images/**/*.*')

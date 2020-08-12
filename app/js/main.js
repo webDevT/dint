@@ -13,8 +13,26 @@ $(".login__tab").click(function() {
 }).eq(0).addClass("active");
 // end login tab
 
-});
+// start wishlist
+$('.fogot-password').click(function(){
+    $('.popup').addClass('active');
+})
+$('.close').click(function(){
+    $('.popup').removeClass('active');
+})
 
+$(document).mouseup(function (e){ 
+    var div = $(".popup-content"); 
+    var div2 = $(".popup");
+    if (!div.is(e.target) 
+        && div.has(e.target).length === 0) {
+      div2.removeClass('active');
+    }
+  });
+
+// end wishlist
+
+});
 
 
 
