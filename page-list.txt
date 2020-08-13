@@ -1,6 +1,5 @@
 1. Cart
 2. Checkout
-6. Category
-7. Product description
-8. Contact page
-9. News letter
+3. Category
+4. Product description
+5. Contact page

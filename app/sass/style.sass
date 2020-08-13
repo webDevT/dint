@@ -34,7 +34,8 @@ label
 .form-prompt
 	font-size: 12px
 input,
-select
+select,
+textarea
 	display: block 
 	width: 100%
 	height: 40px  
@@ -44,9 +45,11 @@ select:focus
 input:focus
 	box-shadow: 0 0 4px $black
 	outline: none
-input::placeholder 
+input::placeholder,
+textarea::placeholder 
 	color: rgba($black, 0.5)
-
+textarea 
+	height: 100px
 .checkbox-wrapper
 	display: flex
 	label 
@@ -315,12 +318,30 @@ input:focus::placeholder
 	.button
 		max-width: 300px
 		margin: 0 auto
-
-
-
-
-
 //------end newsletter style------
+
+//------start contact style-------
+.contact
+	margin-bottom: 50px
+	h2 
+		text-align: center
+		margin-bottom: 30px
+	.form__row 
+		display: flex
+		justify-content: space-between
+		.form-col
+			width: 48%
+	.button 
+		width: 150px
+		margin: 0 auto
+
+.terms 
+	margin-bottom: 20px
+	height: 180px
+	overflow-y: scroll
+	margin-top: 30px
+//------end contact style---------
+
 @import "media"
 
 
