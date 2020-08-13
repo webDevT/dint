@@ -1,7 +1,5 @@
 1. Cart
 2. Checkout
-3. Login
-4. Sign up
 6. Category
 7. Product description
 8. Contact page

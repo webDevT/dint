@@ -44,6 +44,8 @@ select:focus
 input:focus
 	box-shadow: 0 0 4px $black
 	outline: none
+input::placeholder 
+	color: rgba($black, 0.5)
 
 .checkbox-wrapper
 	display: flex
@@ -85,6 +87,8 @@ input[type="checkbox"]
 	font-size: 12px
 .checkbox-wrapper-password
 	margin-bottom: 0
+input:focus::placeholder 
+	color: transparent
 //----global style------
 
 // ---start menu style---
@@ -272,6 +276,51 @@ input[type="checkbox"]
 				width: 100%
 
 //------end modal style-----
+
+//------start news letter style----
+.margin 
+	font-size: 1
+	color: #fff
+	font-size: 0.1
+	margin-bottom: 20px
+.newsletter
+	padding-top: 30px
+	.form__row 
+		display: flex
+		justify-content: space-between
+		.form-col 
+			text-align: left
+			width: 48%
+	.radio-choice
+		display: flex
+		.radio 
+			margin-right: 16px
+
+	
+
+
+
+.newsletter-content
+	max-width: 830px
+	margin: 0 auto 
+	box-shadow: 0 0 5px rgba(0, 0, 0, .5)	
+	padding: 20px 30px
+	margin-bottom: 50px
+	h4 
+		margin: 0 auto
+		padding-bottom: 20px 
+		border-bottom: 1px solid $black
+		margin-bottom: 20px
+		text-align: center
+	.button
+		max-width: 300px
+		margin: 0 auto
+
+
+
+
+
+//------end newsletter style------
 @import "media"
 
 
