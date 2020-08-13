@@ -2,4 +2,3 @@
 2. Checkout
 3. Category
 4. Product description
-5. Contact page
