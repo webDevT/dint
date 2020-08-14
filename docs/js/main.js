@@ -1,7 +1,12 @@
 $(document).ready(function(e) {
 
 
-
+//-----start reviews tab------
+$(".product-detail__tab").click(function() {
+  $(".product-detail__tab").removeClass("active").eq($(this).index()).addClass("active");
+  $(".product-detail__tab-item").hide().eq($(this).index()).fadeIn(800)
+}).eq(0).addClass("active");
+//-----end reviews tab--------
 
 
 
@@ -48,8 +53,15 @@ $('.slider-nav').slick({
   slidesToScroll: 1,
   asNavFor: '.slider-for',
   focusOnSelect: true,
-  vertical: true
+  vertical: true,
+  prevArrow: $(".prev"),
+  nextArrow: $(".next"),
+
+
+
 });
+
+
 
 
 });

@@ -431,22 +431,25 @@ input:focus::placeholder
 	width: 60%
 	display: flex
 	align-items: flex-start
+	height: 450px
 .slider-for
 	width: 500px
 	.slider-item
 		img 
 
 
+
 .slider-nav
-	width: 70px
+	width: 90px
 	margin-right: 10px
 	.slider-item
-		width: 70px
+		width: 90px
 		max-width: 100%
 		border: 1px solid #fff
+		cursor: pointer
 		img 
-			width: 70px 
-			height: 70px
+			width: 90px 
+			height: 90px
 	.slick-list.draggable
 		padding-top: 0 !important
 		padding-bottom: 0
@@ -471,12 +474,133 @@ input:focus::placeholder
 		max-width: 100%
 .prev,
 .next 
+	cursor: pointer
 	img 
 		width: 15px
 		height: 30px
 .prev
 	img 
 		transform: rotate(90deg)
+.slider-container
+	position: relative
+	.prev 
+		position: absolute
+		top: -30px
+		left: 42px
+	.next
+		position: absolute
+		bottom: 30px
+		left: 42px
+		img 
+			transform: rotate(-90deg)
+.product-descriptin__row
+	display: flex 
+	justify-content: space-between
+
+.product-descriptin-col--text
+	max-width: 400px
+	.button 
+		width: 100%
+		margin-top: 20px
+		a 
+			width: 100%
+	select 
+		margin-top: 20px
+.product-descriptin
+	margin-bottom: 30px
+.product-detail__tabs
+	padding-top: 30px
+	text-align: center
+	padding-top: 30px
+	padding-bottom: 30px
+	.product-detail__tab
+		display: inline-block
+		margin: 0 30px
+		padding-bottom: 20px 
+		border-bottom: 2px solid rgba($black, .2)
+		cursor: pointer
+	.product-detail__tab.active
+		border-bottom: 2px solid rgba($black, 1)
+.product-detail__tab-item
+	text-align: center
+	padding-bottom: 50px
+	display: none
+.product-detail__tab-item:first-child 
+	display: block
+.product-detail__tab-row
+	display: flex 
+	justify-content: space-between
+	margin-bottom: 30px
+.product-detail__tab-col
+	
+	width: 20%
+.product-detail__tab-row--header
+	font-size: 12px
+.category-item
+	display: flex 
+	flex-direction: column 
+	align-items: center
+	justify-content: space-between
+	padding: 1vw 0
+	
+	box-shadow: 0 0 2px rgba($black, 0.5)
+	margin: 1vw
+	overflow: hidden
+	img 
+		width: auto
+		height: 100%
+		
+	.img 
+		height: calc(100% - 2vw)
+		width: calc(100% - 2vw)
+		overflow: hidden
+		display: flex 
+		justify-content: center
+
+.cat1
+	a 
+		width: 30%	
+.cat-div
+	a 
+		width: 49%
+
+.category-item:hover 
+	img 
+		transform: scale(1.05)
+		transition: all 0.5s
+// .category-items
+// 	display: flex 
+// 	flex-wrap: wrap
+// .category-item--first
+// 	width: calc(78% - 1vw)
+// 	height: calc(30vw - 1vw)
+// .category-item--second
+// 	width: 100%
+// 	height: calc(15vw - 1vw)
+// .category-item-wrap
+// 	width: calc(22% - 1vw)
+// .category-item-wrap
+// 	a 
+// 		max-width: 100%
+// .category-item-three
+// 	width: 60%
+// .category-item--four
+// 	width: 30%
+
+.category-items__title
+	margin-top: 1vw
+	font-size: 1vw
+.cat-div
+	width: 100% 
+	justify-content: space-between
+	display: flex
+
+.cat1 
+	display: flex
+	justify-content: space-between
+	width: 100%
+.menu-bar ul li
+	margin-left: 13px
 @import "media"
 
 
