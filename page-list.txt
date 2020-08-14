@@ -1,4 +1,2 @@
-1. Cart
-2. Checkout
-3. Category
-4. Product description
+1. Category
+2. Product description

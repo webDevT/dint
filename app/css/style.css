@@ -19,9 +19,9 @@ header, footer, article, section, hgroup, nav, figure {
 img {
 	border: 0 none;
 	height: auto;
-	max-width: 100%;
-	vertical-align:middle;
-	transition: all 0.5s ease-in-out 0s;
+	/*max-width: 100%;*/
+	vertical-align: middle;
+	/*transition: all 0.5s ease-in-out 0s;*/
 }
 ul {
 	list-style-type:none;

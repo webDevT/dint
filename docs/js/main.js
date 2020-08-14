@@ -1,5 +1,10 @@
 $(document).ready(function(e) {
 
+
+
+
+
+
 // start wishlist
 $('.wishlist__remove').click(function(){
     $(this).parent().hide();
@@ -32,8 +37,22 @@ $(document).mouseup(function (e){
 
 // end wishlist
 
+ $('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  focusOnSelect: true,
+  vertical: true
 });
 
+
+});
 
 
 
