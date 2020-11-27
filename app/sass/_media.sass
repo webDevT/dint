@@ -1,230 +1,310 @@
 @import "vars"
 
-/*==========  Desktop First  ==========*/
+@media only screen and (max-width: 1100px)
+	.product-card__footer .button--black a
+  		min-width: 160px
 
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
+@media only screen and (max-width: 992px)
+  .wishlist__item
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+
+  .wishlist__product-details
+    max-width: 100%
+
+  .wishlist__item-left
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+
+  .wishlist__item-img
+    width: 100%
+    height: 92.27vw
+
+  .wishlist__remove
+    background: rgba(255, 255, 255, 0.8)
+    padding: 1px 8px
+    -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5)
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5)
+    top: 10px
+
+  .wishlist__product-details
+    padding-left: 0
+    padding-right: 0
+    padding-bottom: 0
+
+  .wishlist__item
+    margin-bottom: 30px
+
+    h4
+      margin-bottom: 20px
+
+  .wishlist__product-description
+    padding-bottom: 20px
+
+  .price-mobil-title
+    text-transform: uppercase
+    font-size: 12px
+    border-bottom: 1px solid #1e1f20
+    margin-bottom: 20px
+    padding-bottom: 2px
+
+  .price-wrapper
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-pack: justify
+    -ms-flex-pack: justify
+    justify-content: space-between
+
+  .price
+    margin-bottom: 20px
+
+  .wishlist__item:last-child
+    border-bottom: none
+
+  .wishlist__item-right
+    width: 100%
+
+  .cd-dropdown, .price-wrapper span, .price-mobil-title
+    display: block
+
+  .form__row--input, .newsletter .form__row--input
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+
+    .form-col
+      width: 100%
+
+  .contact .form__row .form-col
+    width: 100%
+
+  .cart
+    .price-mobil-title
+      display: none
+
+    .price-wrapper
+      display: -webkit-box
+      display: -ms-flexbox
+      display: flex
+      -webkit-box-pack: justify
+      -ms-flex-pack: justify
+      justify-content: space-between
+
+      span
+        display: none
+
+  .cart-quantity
+    -webkit-box-pack: justify
+    -ms-flex-pack: justify
+    justify-content: space-between
+    margin-bottom: 20px
+
+  .price-val
+    display: inline-block
+
+  .checkout__row
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+
+  .checkout__col
+    width: 100%
+
+  .checkout__row
+    .wishlist__item-right
+      -webkit-box-align: start
+      -ms-flex-align: start
+      align-items: flex-start
+
+    .footer-button
+      -webkit-box-pack: center
+      -ms-flex-pack: center
+      justify-content: center
+      margin-top: 40px
+
+      .button
+        width: 100%
+
+        a
+          width: 100%
+
+  .slider-for, .slider-item .slider-image
+    width: 71.875vw
+
+  .slider-nav
+    width: 15.7vw
+    height: 15.7vw
+    margin-right: 10px
+
+    .slider-item
+      width: 15.7vw
+      max-width: 100%
+      border: 1px solid #fff
+      cursor: pointer
+
+      img
+        width: 15.7vw
+        height: 15.7vw
+
+  .slider-container
+    height: 90vw
+
+  .prev img, .next img
+    height: 6.250vw
+    width: 3.125vw
+
+  .slider-container
+    .prev, .next
+      left: 6.250vw
+
+    .prev
+      top: -6.5vw
+
+    .next
+      bottom: 6.5vw
+
+  .product-descriptin__row
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+
+  .product-descriptin-col--text
+    max-width: 100%
+
+  .product-detail__tab-col
+    font-size: 16px
+    margin-bottom: 25px
+    width: 100%
+
+  .product-detail__tab-row--header
+    font-size: 14px
+
+  .product-detail__tab-item-wrap
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+
+  .product-detail__tab-row
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+    width: 50%
+    text-align: left
+
+  .product-detail__tabs .product-detail__tab
+    margin: 0 10px
+    font-size: 14px
+
+  .cat1
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+
+    a
+      width: 100%
+      max-width: 100%
+
+  .category-item-wrap
+    width: 100%
+    height: auto
+
+    a
+      width: 100%
+      height: auto
+
+  .cat-div
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+
+    a
+      width: 100%
+
+  .category-item img
+    width: 100%
+    height: auto
+    max-height: 200vw
+
+  .category-item--first
+    height: auto
+
+  .category-item
+    padding: 3vw
+
+  .category-items__title
+    font-size: 5vw
+  .product-card__footer .product-card__footer-left
+  	display: none
+  .medium-up--hide
+  	display: block
+  	padding-bottom: 20px
+  	p 
+  		padding-bottom: 20px
+  		padding-top: 20px
 
 
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
-	.wishlist__item
-		flex-direction: column
-	.wishlist__product-details
-		max-width: 100%
-	.wishlist__item-left
-		flex-direction: column
-	.wishlist__item-img
-		width: 100%
-		height: 92.27vw
-	.wishlist__remove
-		background: rgba(#fff, 0.8)
-		padding: 1px 8px
-		box-shadow: 0px 0px 1px rgba(#000, 0.5)
-		top: 10px
-	.wishlist__product-details
-		padding-left: 0 
-		padding-right: 0
-		padding-bottom: 0
-	.wishlist__item
-		margin-bottom: 30px
-		h4 
-			margin-bottom: 20px
-	.wishlist__product-description
-		padding-bottom: 20px
-	.price-mobil-title
-		text-transform: uppercase
-		font-size: 12px
-		border-bottom: 1px solid $black
-		margin-bottom: 20px
-		padding-bottom: 2px
-	.price-wrapper
-		display: flex 
-		justify-content: space-between
-	.price 
-		margin-bottom: 20px
-	.wishlist__item:last-child 
-		border-bottom: none
-	.wishlist__item-right
-		width: 100%
-	.cd-dropdown
-		display: block
-	.price-wrapper span,
-	.price-mobil-title
-		display: block
-	.form__row--input
-		flex-direction: column
-		.form-col 
-			width: 100%
-	.newsletter .form__row--input
-		flex-direction: column
-		.form-col 
-			width: 100%
-	.contact
-		.form__row .form-col 
-			width: 100%
-	.cart 
-		.price-mobil-title
-			display: none
-		.price-wrapper
-			display: flex 
-			justify-content: space-between 
-			span 
-				display: none
-	.cart-quantity
-		justify-content: space-between 
-		margin-bottom: 20px
-	.price-val
-		display: inline-block
-	.checkout__row
-		flex-direction: column
-	.checkout__col 
-		width: 100%
-	.checkout__row .wishlist__item-right
-		align-items: flex-start
-	.checkout__row .footer-button
-		justify-content: center
-		margin-top: 40px
-		.button 
-			width: 100% 
-			a 
-				width: 100%
-	.slider-for
-		width: 71.875vw
-	.slider-item
-		.slider-image
-			width: 71.875vw 
-	.slider-nav
-		width: 15.7vw
-		height: 15.7vw
-		margin-right: 10px
-		.slider-item
-			width: 15.7vw
-			max-width: 100%
-			border: 1px solid #fff
-			cursor: pointer
-			img 
-				width: 15.7vw 
-				height: 15.7vw
-	.slider-container
-		height: 90vw
-	.prev img,
-	.next img 
-		height: 6.250vw
-		width: 3.125vw
-	.slider-container .prev,
-	.slider-container .next 
-		left: 6.250vw
-	.slider-container .prev
-		top: -6.5vw
-	.slider-container .next 
-		bottom: 6.5vw
-	.product-descriptin__row
-		flex-direction: column
-	.product-descriptin-col--text
-		max-width: 100%
 
-	.product-detail__tab-col
-		font-size: 16px
-		margin-bottom: 25px
-		width: 100%
-	.product-detail__tab-row--header
-		font-size: 14px
-	.product-detail__tab-item-wrap
-		display: flex
-	.product-detail__tab-row
-		display: flex 
-		flex-direction: column
-		width: 50%
-		text-align: left
-	.product-detail__tabs .product-detail__tab
-		margin: 0 10px
-		font-size: 14px
-	.cat1
-		flex-direction: column
-		a 
-			width: 100%
-			max-width: 100%
-	.category-item-wrap
-		width: 100%
-		height: auto
-
-		a 
-			width: 100%
-			height: auto
-	.cat-div
-		flex-direction: column
-		a 
-			width: 100%
-	.category-item img
-		width: 100%
-		height: auto
-		max-height: 200vw
-	.category-item--first
-		height: auto
-	.category-item
-		padding: 3vw
-	.category-items__title
-		font-size: 5vw
-
-
-
-
-
-
-
-
-
-
-	
-
-
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
-	.login__tab 
-		font-size: 3.5vw
-
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
-
-
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
-
+@media only screen and (max-width: 480px)
+  .login__tab
+    font-size: 3.5vw
+  .like-svg
+  	display: none
+  .product-card__footer-right
+  	width: 100%
+  	justify-content: space-between
+  .product-card__footer .button--black
+  	margin-right: 0
+  .variant-select__selected
+  	padding-left: 10px
+  	border-left: none
+  	padding-right: 37px
+  .product-card__footer
+  	padding: 0
+  .color-select__image
+  	width: 20px
+  	height: 15px
+  .product-card__footer .button a
+  	padding-left: 5px
+  	padding-right: 5px
+  	min-width: 110px
+  .product-card__footer.active 
+  	bottom: 0
+  .product-slider__item:before 
+  	content: ''
+  	width: 100% 
+  	height: 100% 
+  	background: transparent
+  	position: absolute 
+  	top: 0 
+  	left: 0
+  .product-single__description
+  	padding-top: 60px 
+  	padding-bottom: 0px
+  .popup-size-guide
+  	.popup-content 
+  		padding-left: 10px
+  		padding-right: 10px
+  		font-size: 12px
+  th, td
+  	padding: 5px 7px
+  .popup-fit
+  	.popup-content
+  		padding-left: 15px
+  		padding-right: 15px
 
 
 
