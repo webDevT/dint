@@ -62,23 +62,6 @@ $('.slider-nav').slick({
 });
 
 
-$('.variant-select__selected-wrapper').click(function(){
-    $(this).toggleClass('active');
-})
-$('.like-svg').click(function(){
-    $(this).toggleClass('active');
-})
-
-$('.size-popup').click(function(){
-    $('.popup-size-guide').addClass('active');
-})
-
-$('.fit-popup').click(function(){
-    $('.popup-fit').addClass('active');
-})
-
-
-
 });
 
 

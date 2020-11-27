@@ -1007,7 +1007,7 @@ input:focus::-webkit-input-placeholder, input:focus::-moz-placeholder, input:foc
 .prev-arrow {
   position: absolute;
   cursor: pointer;
-  z-index: 99;
+  z-index: 1;
   top: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -1029,6 +1029,7 @@ input:focus::-webkit-input-placeholder, input:focus::-moz-placeholder, input:foc
 
 .product-card {
   position: relative;
+  padding-top: 0;
 }
 
 .padding {
