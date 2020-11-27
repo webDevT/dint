@@ -1041,9 +1041,9 @@ input:focus::-webkit-input-placeholder, input:focus::-moz-placeholder, input:foc
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  -webkit-transform: translateY(75%) translateX(-50%);
-      -ms-transform: translateY(75%) translateX(-50%);
-          transform: translateY(75%) translateX(-50%);
+  -webkit-transform: translateY(0) translateX(-50%);
+      -ms-transform: translateY(0) translateX(-50%);
+          transform: translateY(0) translateX(-50%);
   padding: 15px;
   -webkit-transition: all 0.1s;
   -o-transition: all 0.1s;
@@ -1062,6 +1062,7 @@ input:focus::-webkit-input-placeholder, input:focus::-moz-placeholder, input:foc
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 1;
 }
 
 .product-card__footer.active {
