@@ -1463,7 +1463,7 @@
 var target = $('.product-card__footer');
 var targetPos = target.offset().top;
 var winHeight = $(window).height() - 150;
-var wH = $(window).height();
+var wH = $(window).height() + 500;
 var scrollToElem = targetPos - winHeight;
 $(window).scroll(function(){
   var winScrollTop = $(this).scrollTop();
